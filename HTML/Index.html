@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Pagina</title>
+</head>
+<body>
+    <!-- Esto es un comentario -->
+    <!--
+        Esto es un comentario
+        de varias lineas
+     -->
+
+    <!-- Parrafo --> 
+
+    <p id="holamundo">Hola mundo</p> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem, aliquid blanditiis maiores rerum fuga minima eius repellendus maxime, quae sit vitae doloribus suscipit qui officia. Animi quisquam veritatis accusamus.</p>
+
+    <!-- Titulares -->
+
+    <h1>Soy un titulo</h1>
+    <h2>Soy un subtitulo</h2>
+    <h3>Soy un subtitulo mas pequeño</h3>
+    <h4>Soy mas pequeño</h4>
+    <h5>Soy aun mas pequeño</h5>
+    <h6>Soy mucho mas pequeño</h6>
+    
+    <!-- Imagen Local -->
+
+    <img id="gato" src="Images/No es compra pero es el cuarto codigo canjeado de PayDay 2.png" alt="Imagen de compra de Steam">
+    <img src="Images/No es compra pero es el cuarto codigo canjeado de PayDay 2.png" alt="Imagen de compra de Steam" width="1200px" height="700px" >
+
+    <!-- Imagen de la Nube -->
+
+    <img src="https://cdn5.idcgames.com/storage/image/1158/game_home_bg_section_2/default.jpg" alt="Imagen de PayDay 2"> 
+
+    <!-- Videos -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uTA-tjgGE08?si=wXW-UmoT0DrFYeGC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Videos Locales -->
+
+    <video controls autoplay loop src="Videos/Prueba Visual Estudio Code.mp4"></video>
+    <video controls autoplay loop>
+        <source src="Videos/Prueba Visual Estudio Code.mp4" type="video/mp4" >
+        Tu navegador no soporta esta etiqueta de video.
+    </video>
+
+    <!-- Ubicacion Google Maps -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62773.11525781262!2d-67.12556431180595!3d10.475443751764688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a61d0150e2a4b%3A0x2745b9c0be0a855d!2sEl%20Junquito%2C%20Vargas!5e0!3m2!1ses!2sve!4v1716770090003!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Listas -->
+    <!-- Listas organizadas/ordenadas -->
+
+    <ol>
+        <li>Tener todos los materiales</li>
+        <li>Hacer la mezcla</li>
+        <li>Cocinar la mezcla</li>
+    </ol>
+
+    <!-- Listas no organizadas/ordenada -->
+
+    <ul>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Php</li>
+    </ul>
+
+    <!-- Tablas -->
+
+    <table>
+        <!-- Cabezera de la tabla -->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <!-- Datos de la tabla -->
+        <tr>
+            <td>Gian Franco</td>
+            <td>Gioia Faria</td>
+            <td>18 Años</td>
+        </tr>
+        <tr>
+            <td>Eric</td>
+            <td>Oropeza</td>
+            <td>19 Años</td>
+        </tr>
+    </table>
+
+    <!-- Boton -->
+
+    <button>Presioname</button>
+
+    <!-- Ancla (Link) -->
+
+    <a href="https://www.youtube.com/" target="_blank">Enlace que te redirigira a YouTube</a>
+    <a href="https://www.google.com" target="_blank">
+        <button>Ir a Google</button>
+    </a>
+
+    <a href="https://www.google.com" target="_blank">
+        <p>Texto de prueba</p>
+    </a>
+
+    <a href="pages/contacto.html" target="_blank">
+        Contactanos
+    </a>
+
+    <!-- Descargar archivos -->
+
+    <a href="Images/No es compra pero es el cuarto codigo canjeado de PayDay 2.png" download="PayDay 2.png">
+        Descargar Imagen
+    </a>
+
+    <!-- ID y Clase -->
+
+    <p id="Parrafo_ejemplo">Soy un identificador</p>
+    <a id="Enlace_ejemplo" href=""></a>
+
+    <p class="Rojo">Ejemplo de clase</p>
+    <p class="Rojo Contenedor Parrafo">Ejemplo de clase 2</p>
+
+    <a href="#holamundo">
+        <button>Subir</button>
+    </a>
+
+    <a href="#gato">
+        <button>Ir a imagen de compra</button>
+    </a>
+
+    <!-- Imputs (Entradas) -->
+
+    <!-- Input de texto -->
+
+    <input type="text" 
+    name="Nombre" 
+    id="Nombre" 
+    placeholder="Escribe tu nombre" 
+    maxlength="50" 
+    minlength="10" 
+    value="Jose" 
+    readonly
+    disabled>
+    
+    <!-- Input de numero -->
+
+    <input type="number" name="edad" id="edad">
+
+    <!-- Input de Correo Electronico -->
+
+    <input type="email" name="correo" id="correo" placeholder="escribe tu correo electronico">
+
+    <!-- Input de Fecha -->
+
+    <input type="date" name="fnacimiento" id="fnacimiento" min="2000-01-01" max="2024-12-31">
+
+    <!-- Input de color -->
+
+    <input type="color" name="colorf" id="colorf">
+
+    <!-- Input CheckBox -->
+
+    <label for="notificaciones">
+        <input type="checkbox" name="terminos" id="notificaciones" value="accept"> 
+        Aceptar notificaciones al correo electronico
+    </label>
+
+    <!-- Input Radio -->
+
+    <label for="bus">
+        <input type="radio" name="transporte" id="bus">
+        Bus
+    </label>
+
+    <label for="carro">
+        <input type="radio" name="transporte" id="carro">
+        Carro
+    </label>
+
+    <label for="sentadila">
+        <input type="radio" name="ejercicio" id="sentadilla">
+        Sentadilla
+    </label>
+
+    <!-- Input de Botones -->
+
+    <input type="button" value="Enviar">
+
+    <input type="submit" value="Enviar Datos">
+
+    <input type="reset" value="Resetear">
+    
+
+</body>
+</html>
